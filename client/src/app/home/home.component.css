@@ -1,0 +1,11 @@
+.wrapper {
+    text-align: center;
+}
+
+.butaozao {
+    position: absolute;
+    top: 50%;
+}
+.content{
+  position: relative;
+}

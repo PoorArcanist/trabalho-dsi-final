@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<div class="wrapper">
+  <button type="button" class="butaozao btn btn-outline-primary btn-lg" data-toggle="modal" data-target="#exampleModal">
+    Cadastre-se
+  </button>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Cadastrar Pessoa</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <form class="form-horizontal" method="post" action="http://localhost:3000/app/cadpessoa" (ngSubmit)="onSubmit()">
+        <div class="modal-body">
+            <div class="form-group">
+              <label>Nome</label><br>
+              <input id= "nome" type="text" name="nome"><br>
+            </div>
+            <div class="form-group">
+              <label>Sobrenome</label><br>
+              <input id = "sobrenome" type="text" name="sobrenome"><br>
+            </div>
+            <div class="form-group">
+              <label>Idade</label><br>
+              <input id = "idade"type="text" name="idade"><br>
+            </div>
+            <div class="form-group">
+              <label>Profissão</label><br>
+              <input id="profissao" type="text" name="profissao"><br>
+            </div>
+          </div>
+          <div class="form-group">
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-primary" >Salvar</button>
+      </div>
+      </div>
+    </form>
+    </div>
+  </div>
+</div>
